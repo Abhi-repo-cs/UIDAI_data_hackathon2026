@@ -1,0 +1,100 @@
+# Jury Guide
+## Aadhaar Niranthar
+
+This guide is intended to help evaluators quickly understand:
+- What problem this project actually solves
+- How it differs from standard Aadhaar analytics
+- Where to focus attention for assessment
+
+---
+
+## 1. What Problem This Project Solves (In One Line)
+
+This project identifies **where Aadhaar continuity is likely to fail next**, not where it failed in the past — and prioritizes preventive action before citizens experience exclusion.
+
+---
+
+## 2. How to Read This Project (Suggested Order)
+
+If you have limited time, we recommend the following order:
+
+### Step 1 — Executive Summary (`README.md`)
+- Understand the problem framing
+- Note the shift from availability to continuity
+- Focus on the *forward-looking* nature of the system
+
+### Step 2 — Decision Readiness (`DECISION_READINESS.md`)
+- Review how outputs translate into UIDAI actions
+- Note the decision ownership map and trigger framework
+- This section reflects policy and operational maturity
+
+### Step 3 — Core Visuals (`/images` or `/visualizations`)
+- Each visual answers a specific decision question
+- Titles are phrased as policy or operational queries
+- Visuals are designed to support action, not exploration
+
+### Step 4 — Analytical Logic (`src/indices/`)
+- Review `service_resilience_index.py` (SRI)
+- Review `continuity_break_risk.py` (CBR)
+- Review `intervention_priority.py` (IPR)
+- Emphasis is on explainability and governance safety
+
+---
+
+## 3. What Makes This Different From Typical Hackathon Entries
+
+Most Aadhaar-related analyses:
+- Describe historical stress or backlog
+- Focus on volume or infrastructure presence
+- End with generic recommendations
+
+This project deliberately avoids that pattern by:
+- Modeling **time-to-continuity-failure**
+- Measuring **resilience**, not just load
+- Producing **ranked, explainable intervention priorities**
+- Integrating governance and ethics from the design stage
+
+This is a **decision-support system**, not a dashboard.
+
+---
+
+## 4. How to Evaluate Technical Rigor
+
+Evaluators may wish to note that:
+- All inputs are aggregated UIDAI datasets
+- No individual-level inference is performed
+- No opaque or black-box models are used
+- All composite scores enforce explicit weight validation
+- Configuration (thresholds, weights) is externalized for policy control
+
+Technical choices prioritize **defensibility and interpretability** over complexity.
+
+---
+
+## 5. How to Evaluate Policy Applicability
+
+This project is designed to be piloted without:
+- New data collection
+- Policy change
+- Automation of enforcement
+
+It complements existing UIDAI dashboards by adding a **preventive layer** focused on continuity risk.
+
+---
+
+## 6. What This Project Is Not Claiming
+
+This system does not claim to:
+- Predict individual Aadhaar failure
+- Replace UIDAI operational judgment
+- Provide deterministic forecasts
+
+All outputs are **risk signals**, intended to support human decision-making.
+
+---
+
+## 7. Final Note to Evaluators
+
+If this project feels less like a hackathon demo and more like an operational pilot proposal, that is intentional.
+
+The design goal was not to maximize visual novelty, but to maximize **decision readiness, credibility, and preventive impact**.

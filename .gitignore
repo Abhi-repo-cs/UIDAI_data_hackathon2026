@@ -1,0 +1,38 @@
+
+# Python artifacts
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# -------------------------------
+# Development-only folders
+# -------------------------------
+visualizations/
+policy-integration/
+features/
+simulation/
+images/
+
+# -------------------------------
+# Local / OS artifacts
+# -------------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------------
+# Environment
+# -------------------------------
+.env
+.venv
+env/
+
+# Raw UIDAI datasets (re-downloadable)
+data/raw/
+
+college_logo.jpeg
+test.py

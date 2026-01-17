@@ -1,0 +1,34 @@
+# ==========================================
+# SYSTEM PARAMETERS
+# Aadhaar Continuity & Resilience Atlas
+# ==========================================
+
+# Time configuration
+ROLLING_WINDOW_MONTHS: 6
+
+# Normalization method
+# Options: zscore | minmax
+NORMALIZATION_METHOD: zscore
+
+# --------------------------
+# Service Resilience Index
+# --------------------------
+SRI_WEIGHTS:
+  volatility_norm: 0.33
+  acceleration_norm: 0.33
+  peak_norm: 0.34
+
+# --------------------------
+# Continuity Break Risk
+# --------------------------
+CBR_WEIGHTS:
+  backlog_gap_norm: 0.35
+  backlog_growth_norm: 0.25
+  lifecycle_norm: 0.40
+
+# --------------------------
+# Intervention Priority
+# --------------------------
+IPR_WEIGHTS:
+  sri_score: 0.5
+  cbr_score: 0.5

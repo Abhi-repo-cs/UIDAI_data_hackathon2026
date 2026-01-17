@@ -1,0 +1,29 @@
+# ==========================================
+# POLICY THRESHOLDS
+# Decision Triggers (Not Model Parameters)
+# ==========================================
+
+# --------------------------
+# Service Resilience Index
+# --------------------------
+SRI:
+  STABLE: 0.30
+  VULNERABLE: 0.60
+  FRAGILE: 0.80
+
+# --------------------------
+# Continuity Break Risk
+# --------------------------
+CBR:
+  LOW: 0.30
+  EMERGING: 0.50
+  ELEVATED: 0.70
+  CRITICAL: 0.85
+
+# --------------------------
+# Intervention Priority
+# --------------------------
+IPR:
+  MONITOR: 0.40
+  INTERVENE: 0.65
+  ESCALATE: 0.80
